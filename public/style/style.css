@@ -1,0 +1,55 @@
+html{
+    height: 100%;
+}
+body{
+    background: repeating-linear-gradient(60deg, white , black 20%, Grey 2px);
+    background-size: cover;
+    position: center;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    border-style: solid;
+    justify-content: space-around;
+    align-self: center;
+    padding: 3%;
+    border-radius: 30px;
+    color: pink;
+    background-image: linear-gradient(90deg, rgba(81,81,121,1) 14%, rgba(2,0,36,1) 64%, rgba(21,94,108,1) 100%);
+}
+.inputCont{
+    position:relative;
+}
+
+input{
+    border-radius: 45px;
+    margin: 10px;
+    padding: 13px;
+    padding-top: 16px;
+}
+.inputCont input:focus + label,
+.inputCont input:not(:placeholder-shown) + label{
+    opacity:1;
+}
+input:focus::placeholder{
+    color: transparent;
+}
+label{
+    opacity:0;
+    color: pink;
+    top: -7px;
+    left: 3px;
+    pointer-events: none;
+    position:absolute;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+    transform: translateY(-50%);
+}
+form button{
+    border-radius: 30px;
+    padding: 3%;
+}
+a{
+    color: aliceblue;
+}
